@@ -1,0 +1,23 @@
+services:
+  automatic1111:
+    build:
+      context: .
+      dockerfile: Dockerfile
+#   image: custom name image:tag if required
+    container_name: automatic1111
+    restart: unless-stopped
+    ports:
+      - "7860:7860"
+    volumes:
+      - ./models:/app/models
+      - ./extensions:/app/extensions
+      - ./embeddings:/app/embeddings
+      - ./outputs:/app/outputs
+    runtime: nvidia
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
