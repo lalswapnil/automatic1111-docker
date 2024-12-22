@@ -71,7 +71,7 @@ sudo docker run --rm --runtime=nvidia --gpus all nvidia/cuda:11.6.2-base-ubuntu2
 
 ### Clone this repo
 ```
-git clone https://github.com/lalswapnil/automatic1111
+git clone https://github.com/lalswapnil/automatic1111-docker
 ```
 ### Option 1 (Build and deploy in a single command - Recommended)
 #### Build and deploy the container in a single command. WebUI is available on port `7860`. Required folders are mapped in current location.
