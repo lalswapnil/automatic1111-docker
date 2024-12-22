@@ -1,6 +1,14 @@
 # Automatic1111 docker build
 build based on Ubuntu 22.04, Cuda 12.6.0 & Python 3.10 using latest release from https://github.com/AUTOMATIC1111/stable-diffusion-webui
 
+## Quick start (assuming docker basic setup exists, refer to prerequisites for any issues)
+```
+curl -sSL https://raw.githubusercontent.com/lalswapnil/automatic1111-docker/refs/heads/master/automatic1111-docker.sh | bash
+```
+Install automatic1111 in docker. Files are created in current location in folder `automatic1111-docker`
+
+*refer to prerequisite if any  issues are encountered*
+
 ## Prerequisite:
 
 ### 1. [Docker](https://docs.docker.com/engine/install/debian/)
