@@ -88,7 +88,7 @@ sudo docker-compose up --build
 ```
 `docker-compose.yml` file can be modified to change folder locations and access port for webui. Automatic1111 WebUI starts with following commandline arguments enabled: `--listen --api --allow-code --administrator`
 
-### Option 1 (Manually building image):
+### Option 2 (Manually building image):
 #### 1.  Build image using Dockerfile
 
 ```
